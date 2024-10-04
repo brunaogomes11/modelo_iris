@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado Classificação Iris</title>
+</head>
+<body>
+    <h1>Resultado Classificação Iris</h1>
+    <ul>
+        <li>Largura Sepala: {{ entrada[0] }}</li>
+        <li>Comprimento Sepala: {{ entrada[1] }}</li>
+        <li>Largura Petala: {{ entrada[2] }}</li>
+        <li>Comprimento Petala: {{ entrada[3] }}</li>
+    </ul>
+    <ul>
+        <li>Setosa: {{ resultado[0]*100 }}%</li>
+        <li>Virginica: {{ resultado[1]*100 }}%</li>
+        <li>Versicolor: {{ resultado[2]*100 }}%</li>
+    </ul>
+    <a href="{{ url_for('hello_world') }}">Voltar</a>
+</body>
+</html>
